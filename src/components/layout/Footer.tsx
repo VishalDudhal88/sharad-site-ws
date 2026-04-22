@@ -26,14 +26,14 @@ export default function Footer() {
       <div className="container footer-inner">
         <p className="footer-credit-text">
           In Collaboration with{" "}
-          <a href="#" className="footer-credit-link">Webster</a>
+          <a href="https://webster.co.in/" className="footer-credit-link" target="_blank">Webster</a>
         </p>
 
         <div className="footer-peacock">
           <Image
             src="/images/feather.png"
             alt="Decorative peacock feather"
-            width={55}
+            width={65}
             height={88}
             className="footer-peacock-image"
           />

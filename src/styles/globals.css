@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  :root{
+    --Kanto-Brand: var(--Kanto-Brand, #0D1525);
+  }
   html {
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -11,7 +14,7 @@
 
   body {
     background-color: #ffffff;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
   }
 
   * {
@@ -91,7 +94,6 @@ html {
 
   .header-container {
     width: 100%;
-    border-bottom: 1px solid #f3f4f6;
     position: sticky;
     top: 0;
     background-color: rgba(255, 255, 255, 0.95);
@@ -100,7 +102,7 @@ html {
   }
 
   .header-inner {
-    height: 5rem;
+    height: 6.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -112,7 +114,7 @@ html {
     justify-content: center;
     width: 2.25rem;
     height: 2.25rem;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     border-radius: 0.375rem;
     transition: color 200ms ease;
   }
@@ -163,11 +165,11 @@ html {
   }
 
   .mobile-nav-link:hover {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
   }
 
   .mobile-nav-link-active {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     font-weight: 700;
   }
 
@@ -191,8 +193,8 @@ html {
   }
 
   .hero-section {
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-top: 5.5rem;
+    padding-bottom: 8rem;
     text-align: center;
   }
 
@@ -226,7 +228,7 @@ html {
 
   .brand-name {
     font-weight: 800;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     letter-spacing: 2.4px;
     font-size: 0.875rem;
     text-transform: uppercase;
@@ -235,13 +237,13 @@ html {
 
   @media (min-width: 640px) {
     .brand-name {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
   }
 
   .brand-tagline {
     font-weight: 500;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     line-height: 1;
     margin-top: 0.25rem;
     letter-spacing: 0.48px;
@@ -257,7 +259,7 @@ html {
   .brand-link {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1.25rem;
   }
 
   .nav-list {
@@ -291,7 +293,7 @@ html {
   }
 
   .nav-link:hover {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
   }
 
   .nav-link:focus-visible {
@@ -300,20 +302,22 @@ html {
   }
 
   .nav-link-active {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.5rem;
   }
 
   .nav-active-indicator {
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-color: #0D1525;
+    background-color: var(--Kanto-Brand, #0d1525);
     border-radius: 9999px;
-    bottom: -26px;
     height: 3px;
+    position: absolute;
+    bottom: -5px;
+    width: 1rem;
+    right: 0;
+    transform: translateX(90%);
+    left: 0px;
   }
 
   .header-social-icons {
@@ -323,7 +327,7 @@ html {
   }
 
   .header-social-link {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 200ms;
@@ -360,7 +364,7 @@ html {
   }
 
   .footer-credit-link:hover {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
   }
 
   .footer-credit-link:focus-visible {
@@ -383,7 +387,6 @@ html {
 
   .footer-peacock-image {
     object-fit: contain;
-    opacity: 0.7;
     filter: grayscale(1);
   }
 
@@ -405,7 +408,7 @@ html {
   }
 
   .footer-social-link:hover {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
   }
 
   .footer-social-link:focus-visible {
@@ -421,7 +424,7 @@ html {
     display: block;
     font-size: 1.875rem;
     line-height: 2.25rem;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
   }
 
   @media (min-width: 640px) {
@@ -434,7 +437,7 @@ html {
   @media (min-width: 768px) {
     .hero-headline-line {
       font-size: 3rem;
-      line-height: 1;
+      line-height: normal;
     }
   }
 
@@ -466,7 +469,7 @@ html {
     padding-bottom: 0.75rem;
     border-radius: 12px;
     border: 1px solid #CCCCCC;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     font-weight: 700;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -476,7 +479,7 @@ html {
   }
 
   .filter-pill:hover {
-    border-color: #0D1525;
+    border-color: var(--Kanto-Brand, #0D1525);
     background-color: #f9fafb;
   }
 
@@ -492,7 +495,6 @@ html {
   .work-card {
     background-color: #F2F2F2;
     border-radius: 16px;
-    border: 3px solid #ffffff;
     box-shadow: inset 4px 4px 16px rgba(0,0,0,0.06);
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -500,11 +502,11 @@ html {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    padding: 2.5rem;
   }
 
   .work-card:hover {
-    box-shadow: 0px 8px 32px rgba(0,0,0,0.10);
+    box-shadow: inset 4px 4px 16px rgba(0,0,0,0.1);
   }
 
   .work-card-content {
@@ -533,7 +535,7 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.025em;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     line-height: 1.25;
   }
 
@@ -541,7 +543,7 @@ html {
     font-size: 14px;
     line-height: 1.4;
     font-weight: 500;
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     margin-top: 0.125rem;
   }
 
@@ -551,14 +553,15 @@ html {
 
   .tag-list {
     display: flex;
-    align-items: center;
+    align-items: start;
     gap: 0;
     flex-wrap: wrap;
+    height:0.5rem;
   }
 
   .tag-item {
     display: flex;
-    align-items: center;
+    align-items: start;
   }
 
   .tag-link {
@@ -574,16 +577,19 @@ html {
   }
 
   .tag-link:hover {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
   }
 
   .tag-separator {
     margin-left: 1rem;
     margin-right: 1rem;
     display: inline-block;
-    width: 1px;
-    height: 0.75rem;
-    background-color: #CCCCCC;
+    width: 2px;
+    height: 3.25rem;
+    background: linear-gradient(to bottom, #CCC 0%, rgba(204, 204, 204, 0) 100%);
+    overflow: visible;
+    top: 3px;
+    position: relative;
   }
 
   /* ────────────────────────────────────────────── */
@@ -798,7 +804,7 @@ html {
   /* ────────────────────────────────────────────── */
 
   .section-heading {
-    color: #0D1525;
+    color: var(--Kanto-Brand, #0D1525);
     font-weight: 700;
   }
 }
