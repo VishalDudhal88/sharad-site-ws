@@ -25,23 +25,15 @@ export default function Footer() {
     <footer ref={containerRef} className="footer-container">
       <div className="container footer-inner">
         <p className="footer-credit-text">
-          In Collaboration with{" "}
-<<<<<<< HEAD
+          In Collaboration with
           <a href="https://webster.co.in/" className="footer-credit-link" target="_blank">Webster</a>
-=======
-          <a href="#" className="footer-credit-link">Webster</a>
->>>>>>> 6cbee9ac89c34e68205e519d3cdeb49b52beae36
         </p>
 
         <div className="footer-peacock">
           <Image
             src="/images/feather.png"
             alt="Decorative peacock feather"
-<<<<<<< HEAD
             width={65}
-=======
-            width={55}
->>>>>>> 6cbee9ac89c34e68205e519d3cdeb49b52beae36
             height={88}
             className="footer-peacock-image"
           />
