@@ -804,11 +804,7 @@ html {
   /* ────────────────────────────────────────────── */
 
   .section-heading {
-<<<<<<< HEAD
     color: var(--Kanto-Brand, #0D1525);
-=======
-    color: #0D1525;
->>>>>>> 6cbee9ac89c34e68205e519d3cdeb49b52beae36
     font-weight: 700;
   }
 }
