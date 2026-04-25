@@ -1112,6 +1112,19 @@ display:block;
   }
 
   @media (max-width: 640px) {
+    .journey-hero{
+      min-height: 22rem;
+    }
+    .journey-hero-photo{
+      min-width: 350px;
+      bottom: -2.2rem;
+    }
+    .collaborations-grid .collaboration-card img{
+      max-height: 20rem;
+    }
+    .collaboration-card{
+      height:20rem !important;
+    }
     .experience-cards-grid {
       grid-template-columns: 1fr;
     }
