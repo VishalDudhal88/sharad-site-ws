@@ -2,14 +2,20 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Linkedin, Mail, Menu, X } from "react-feather";
 import BrandLogo from "@/assets/brand-logo.svg";
 import { navLinks } from "@/lib/data";
 import { gsap, useGSAP } from "@/lib/gsap";
 
+const DARK_ROUTES = new Set(["/journey"]);
+
 export default function Header() {
   const containerRef = useRef<HTMLElement>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isDark = DARK_ROUTES.has(pathname);
 
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
@@ -21,7 +27,7 @@ export default function Header() {
   }, { scope: containerRef });
 
   return (
-    <header ref={containerRef} className="header-container">
+    <header ref={containerRef} className={`header-container${isDark ? " header-dark" : ""}`}>
       <div className="container header-inner">
         <Link href="/" className="brand-link group" aria-label="Sharad Kant — Home">
           <div className="brand-logo">
@@ -36,27 +42,41 @@ export default function Header() {
         {/* Desktop nav */}
         <nav className="hidden sm:flex items-center gap-6 md:gap-10" aria-label="Main navigation">
           <ul className="nav-list">
-            {navLinks.map((link) => (
-              <li key={link.label} className="nav-list-item">
-                <a
-                  href={link.href}
-                  className={link.active ? "nav-link-active" : "nav-link"}
-                  aria-current={link.active ? "page" : undefined}
-                >
-                  {link.label}
-                </a>
-                {link.active && <span className="nav-active-indicator" aria-hidden="true" />}
-              </li>
-            ))}
+            {navLinks.map((link) => {
+              const isActive =
+                link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+              return (
+                <li key={link.label} className="nav-list-item">
+                  <Link
+                    href={link.href}
+                    className={isActive ? "nav-link-active" : "nav-link"}
+                    aria-current={isActive ? "page" : undefined}
+                  >
+                    {link.label}
+                  </Link>
+                  {isActive && <span className="nav-active-indicator" aria-hidden="true" />}
+                </li>
+              );
+            })}
           </ul>
 
           <div className="header-social-icons">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-              className="header-social-link" aria-label="LinkedIn profile" title="LinkedIn">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header-social-link"
+              aria-label="LinkedIn profile"
+              title="LinkedIn"
+            >
               <Linkedin size={20} aria-hidden="true" />
             </a>
-            <a href="mailto:hello@sharadkant.com"
-              className="header-social-link" aria-label="Send an email" title="Email">
+            <a
+              href="mailto:hello@sharadkant.com"
+              className="header-social-link"
+              aria-label="Send an email"
+              title="Email"
+            >
               <Mail size={20} aria-hidden="true" />
             </a>
           </div>
@@ -77,26 +97,38 @@ export default function Header() {
       <div className={`mobile-menu${menuOpen ? " mobile-menu-open" : ""}`} aria-hidden={!menuOpen}>
         <div className="container mobile-menu-inner">
           <ul className="mobile-nav-list">
-            {navLinks.map((link) => (
-              <li key={link.label}>
-                <a
-                  href={link.href}
-                  className={`mobile-nav-link${link.active ? " mobile-nav-link-active" : ""}`}
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+            {navLinks.map((link) => {
+              const isActive =
+                link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+              return (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className={`mobile-nav-link${isActive ? " mobile-nav-link-active" : ""}`}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           <div className="mobile-nav-social">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-              className="header-social-link" aria-label="LinkedIn profile">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="header-social-link"
+              aria-label="LinkedIn profile"
+            >
               <Linkedin size={20} aria-hidden="true" />
             </a>
-            <a href="mailto:hello@sharadkant.com"
-              className="header-social-link" aria-label="Send an email">
+            <a
+              href="mailto:hello@sharadkant.com"
+              className="header-social-link"
+              aria-label="Send an email"
+            >
               <Mail size={20} aria-hidden="true" />
             </a>
           </div>

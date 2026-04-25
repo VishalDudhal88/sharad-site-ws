@@ -109,9 +109,9 @@ export const projects: Project[] = [
 ];
 
 export const navLinks = [
-  { label: "Work", href: "#work", active: true },
-  { label: "Journey", href: "#journey", active: false },
-  { label: "Resources", href: "#resources", active: false },
+  { label: "Work", href: "/" },
+  { label: "Journey", href: "/journey" },
+  { label: "Resources", href: "/resources" },
 ];
 
 export const filterOptions = [

@@ -1,0 +1,45 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 96 106.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 97">
+<rect id="Rectangle 7956" x="1.5" y="21" width="93" height="50" rx="4.5" stroke="var(--stroke-0, #0D1525)" stroke-width="3"/>
+<path id="Vector 9" d="M31.5 21V14.5C31.5 13.3954 32.3954 12.5 33.5 12.5H39.9653C40.8706 12.5 41.6629 11.892 41.8972 11.0176L44.0502 2.98236C44.2845 2.108 45.0769 1.5 45.9821 1.5H47.9653C48.8706 1.5 49.6629 2.108 49.8972 2.98236L52.0502 11.0176C52.2845 11.892 53.0769 12.5 53.9821 12.5H62C63.1046 12.5 64 13.3954 64 14.5V21" stroke="var(--stroke-0, #0D1525)" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 10" d="M25.5 71V77C25.5 78.1046 26.3954 79 27.5 79H33.5359C35.0755 79 36.0377 80.6667 35.2679 82L26.8964 96.5C26.5391 97.1188 25.8789 97.5 25.1643 97.5H21C19.8954 97.5 19 98.3954 19 99.5V103C19 104.105 19.8954 105 21 105H35C36.1046 105 37 104.105 37 103V99.3301C37 98.3194 36.1806 97.5 35.1699 97.5C33.761 97.5 32.8805 95.9749 33.5849 94.7548L42.1036 80C42.4609 79.3812 43.1212 79 43.8357 79H48.5" stroke="var(--stroke-0, #0D1525)" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 11" d="M69 71V77C69 78.1046 68.1046 79 67 79H60.9641C59.4245 79 58.4623 80.6667 59.2321 82L67.6036 96.5C67.9609 97.1188 68.6211 97.5 69.3357 97.5H73.5C74.6046 97.5 75.5 98.3954 75.5 99.5V103C75.5 104.105 74.6046 105 73.5 105H59.5C58.3954 105 57.5 104.105 57.5 103V99.3301C57.5 98.3194 58.3194 97.5 59.3301 97.5C60.739 97.5 61.6195 95.9749 60.9151 94.7548L52.3964 80C52.0391 79.3812 51.3788 79 50.6643 79H46" stroke="var(--stroke-0, #0D1525)" stroke-width="3" stroke-linecap="round"/>
+<path id="Vector 12" d="M13 47.5L22.0587 41.0664C22.562 40.709 23.2022 40.604 23.7933 40.7819L28.5208 42.2052C29.1358 42.3903 29.8022 42.2689 30.3123 41.8788L37.1581 36.6438C37.6847 36.2411 38.3766 36.1255 39.0055 36.3351L50.5217 40.1738C51.1355 40.3784 51.8104 40.2734 52.333 39.892L70 27" stroke="var(--stroke-0, #0D1525)" stroke-width="3" stroke-linecap="round"/>
+<g id="Rectangle 7957">
+<mask id="path-6-inside-1_0_191" fill="white">
+<rect x="12" y="51.5" width="9" height="11" rx="2"/>
+</mask>
+<rect x="12" y="51.5" width="9" height="11" rx="2" stroke="var(--stroke-0, #0D1525)" stroke-width="6" mask="url(#path-6-inside-1_0_191)"/>
+</g>
+<g id="Rectangle 7958">
+<mask id="path-7-inside-2_0_191" fill="white">
+<rect x="25" y="46.5" width="9" height="16" rx="2"/>
+</mask>
+<rect x="25" y="46.5" width="9" height="16" rx="2" stroke="var(--stroke-0, #0D1525)" stroke-width="6" mask="url(#path-7-inside-2_0_191)"/>
+</g>
+<g id="Rectangle 7959">
+<mask id="path-8-inside-3_0_191" fill="white">
+<rect x="38" y="48.5" width="9" height="14" rx="2"/>
+</mask>
+<rect x="38" y="48.5" width="9" height="14" rx="2" stroke="var(--stroke-0, #0D1525)" stroke-width="6" mask="url(#path-8-inside-3_0_191)"/>
+</g>
+<g id="Rectangle 7960">
+<mask id="path-9-inside-4_0_191" fill="white">
+<rect x="51" y="46.5" width="9" height="16" rx="2"/>
+</mask>
+<rect x="51" y="46.5" width="9" height="16" rx="2" stroke="var(--stroke-0, #0D1525)" stroke-width="6" mask="url(#path-9-inside-4_0_191)"/>
+</g>
+<g id="Rectangle 7962">
+<mask id="path-10-inside-5_0_191" fill="white">
+<rect x="63" y="37.5" width="9" height="25" rx="2"/>
+</mask>
+<rect x="63" y="37.5" width="9" height="25" rx="2" stroke="var(--stroke-0, #0D1525)" stroke-width="6" mask="url(#path-10-inside-5_0_191)"/>
+</g>
+<g id="Rectangle 7961">
+<mask id="path-11-inside-6_0_191" fill="white">
+<rect x="75" y="28.5" width="9" height="34" rx="2"/>
+</mask>
+<rect x="75" y="28.5" width="9" height="34" rx="2" stroke="var(--stroke-0, #0D1525)" stroke-width="6" mask="url(#path-11-inside-6_0_191)"/>
+</g>
+</g>
+</svg>

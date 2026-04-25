@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "WebSearch"
+      "WebSearch",
+      "mcp__claude_ai_Figma__get_design_context",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/8a353fda-e258-4783-860f-1990bd16774d\" -o tool-jira.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/d4993f37-2877-4364-bf1b-5b7873ee7e27\" -o tool-claude.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/50fdfe51-429a-496e-96ed-9d325559f8f1\" -o tool-sketch.png)",
+      "Bash(curl -sL \"https://www.figma.com/api/mcp/asset/2cd1c37d-78c2-4d5b-b5f2-cbc17ab5045d\" -o tool-comfy.png)"
     ]
   }
 }
