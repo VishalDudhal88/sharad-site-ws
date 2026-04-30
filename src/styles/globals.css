@@ -809,8 +809,11 @@ html {
   .section-heading {
     color: var(--Kanto-Brand, #0D1525);
     font-weight: 700;
+    font-size:2rem;
   }
-
+.section-subheading{
+  color:#666;
+}
   /* ────────────────────────────────────────────── */
   /* HEADER DARK VARIANT */
   /* ────────────────────────────────────────────── */
@@ -1305,6 +1308,1444 @@ max-height:8rem;
   }
 }
 
+@layer components {
+  /* ────────────────────────────────────────────── */
+  /* CASE STUDY PAGE */
+  /* ────────────────────────────────────────────── */
+
+  /* ── Hero ── */
+
+  .case-study__hero {
+    background-color: #ffffff;
+    padding: 4rem 10% 8rem;
+  }
+.case-study__hero-card-inner{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #fff;
+    box-shadow: inset .25rem .25rem 1.5rem #00000014;
+}
+  .case-study__hero-inner {
+    display: grid;
+    grid-template-columns: 1fr 0.72fr;
+    gap: 4rem;
+    align-items: stretch;
+  }
+
+  .case-study__hero-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .case-study__hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #293790;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .case-study__hero-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .case-study__hero-desc {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.6;
+  }
+
+  .case-study__hero-desc a {
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+  }
+
+  .case-study__hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2.5rem;
+  }
+
+  .case-study__stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .case-study__stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.3;
+  }
+
+  .case-study__stat-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+    line-height: 1.4;
+    margin-top: 0.625rem;
+  }
+
+  .case-study__hero-card {
+    position: relative;
+    border-radius: 1.25rem;
+    border: 0.5rem solid #ffffff;
+    box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    background-color: #f8f8f8;
+    min-height: 26rem;
+  }
+
+  .case-study__hero-card-img {
+    object-fit: cover;
+  }
+
+  /* ── Shared section shell ── */
+
+  .case-study__section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .case-study__section-inner {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .case-study__section-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 1.25rem;
+  }
+
+  .case-study__section-label--light {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .case-study__section-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0D1525;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+  }
+
+  .case-study__body-text {
+    font-size: 1.0625rem;
+    font-weight: 400;
+    color: #0D1525;
+    line-height: 1.65;
+    margin-bottom: 1.25rem;
+  }
+
+  .case-study__body-text:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ── Overview ── */
+
+  .case-study__overview {
+    background-color: #ffffff;
+    border-top: 0.0625rem solid #EBEBEB;
+  }
+
+  .case-study__overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .case-study__overview-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .case-study__overview-aside {
+    padding-top: 2.75rem;
+  }
+
+  .case-study__fact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  .case-study__fact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 0.0625rem solid #EBEBEB;
+  }
+
+  .case-study__fact:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .case-study__fact-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #666666;
+  }
+
+  .case-study__fact-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0D1525;
+    line-height: 1.6;
+  }
+
+  /* ── Problem ── */
+
+  .case-study__problem {
+    background-color: #0D1525;
+  }
+
+  .case-study__problem .case-study__section-heading {
+    color: #ffffff;
+  }
+
+  .case-study__pull-quote {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.35;
+    margin: 0 0 2.5rem;
+    max-width: 46rem;
+    border-left: 0.25rem solid #FF9D00;
+    padding-left: 1.5rem;
+  }
+
+  .case-study__problem-body {
+    max-width: 44rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .case-study__problem-body p {
+    font-size: 1.0625rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.65;
+  }
+
+  /* ── Process ── */
+
+  .case-study__process {
+    background-color: #F2F2F2;
+  }
+
+  .case-study__process .case-study__section-heading {
+    max-width: 28rem;
+  }
+
+  .case-study__process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .case-study__step {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border: 0.25rem solid #ffffff;
+    box-shadow: 0 0.5rem 1.25rem 0 rgba(0, 0, 0, 0.06),
+      inset 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.04);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .case-study__step-number {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: #FF9D00;
+  }
+
+  .case-study__step-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0D1525;
+    line-height: 1.3;
+  }
+
+  .case-study__step-body {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.6;
+  }
+
+  /* ── Screens ── */
+
+  .case-study__screens {
+    background-color: #ffffff;
+  }
+
+  .case-study__screens-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+  }
+
+  .case-study__screen {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    margin: 0;
+    border: 0.25rem solid #ffffff;
+    box-shadow: inset 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.06);
+    aspect-ratio: 4 / 3;
+  }
+
+  .case-study__screen--wide {
+    grid-column: span 2;
+    aspect-ratio: 16 / 9;
+  }
+
+  .case-study__screen-img {
+    object-fit: cover;
+  }
+
+  .case-study__screen-img--contain {
+    object-fit: contain;
+    padding: 1.5rem;
+  }
+
+  /* ── Results ── */
+
+  .case-study__results {
+    background-color: #0D1525;
+  }
+
+  .case-study__client-quote {
+    margin: 0 0 3.5rem;
+    max-width: 46rem;
+  }
+
+  .case-study__client-quote p {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  .case-study__client-cite {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 1rem;
+    font-style: normal;
+  }
+
+  .case-study__results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .case-study__result-card {
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.12);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .case-study__result-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+  }
+
+  .case-study__result-body {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+  }
+
+  /* ── Responsive ── */
+
+  @media (max-width: 1024px) {
+    .case-study__hero-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .case-study__hero-card {
+      min-height: 20rem;
+    }
+
+    .case-study__hero-stats {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .case-study__overview-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .case-study__overview-aside {
+      border-top: 0.0625rem solid #EBEBEB;
+      padding-top: 2rem;
+    }
+
+    .case-study__process-steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-study__screens-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-study__screen--wide {
+      grid-column: span 2;
+    }
+
+    .case-study__results-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .case-study__hero {
+      padding: 5rem 6% 4rem;
+    }
+
+    .case-study__hero-title {
+      font-size: 2rem;
+    }
+
+    .case-study__hero-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .case-study__pull-quote {
+      font-size: 1.375rem;
+    }
+
+    .case-study__process-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .case-study__screens-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .case-study__screen--wide {
+      grid-column: span 1;
+      aspect-ratio: 4 / 3;
+    }
+
+    .case-study__results-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .case-study__section-heading {
+      font-size: 1.625rem;
+    }
+  }
+}
+
+@layer components {
+  /* ────────────────────────────────────────────── */
+  /* CASE STUDY — SECTION SHELLS (shared)          */
+  /* ────────────────────────────────────────────── */
+
+  .cs-inner {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cs-section-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+    text-transform: uppercase;
+    color: #666666;
+    margin-bottom: 0.875rem;
+  }
+
+  .cs-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0D1525;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
+
+  .cs-subtext {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.7;
+  }
+
+  .cs-img-placeholder {
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BBBBBB;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* SCOPE SECTION                                 */
+  /* ────────────────────────────────────────────── */
+
+  .cs-scope {
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 10%;
+    background-size: contain;
+  }
+  .ayar-scope{
+    background:url(/images/case-studies/ayar/subhead-bg.png);
+  }
+
+  .cs-scope__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cs-scope__heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  .cs-scope__body {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.75;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* RESEARCH SPLIT: COMPETITIVE + POSITIONING     */
+  /* ────────────────────────────────────────────── */
+
+  .cs-research {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cs-research__left {
+    background-color: #ffffff;
+    padding: 5rem 0rem 5rem 10%;
+  }
+
+  .cs-research__right {
+    background-color: #0D1525;
+    padding: 5rem 10% 5rem 7rem;
+  }
+
+  .cs-research__heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 5rem;
+    margin-top:2rem;
+  }
+.cs-research__right img, .cs-research__left img{
+margin-bottom:3rem;
+}
+  .cs-research__heading--light {
+    color: #ffffff;
+  }
+  
+  /* ────────────────────────────────────────────── */
+  /* USER PERSONAS                                 */
+  /* ────────────────────────────────────────────── */
+
+  .cs-personas {
+    background-color: #EBEBEB;
+    padding: 8rem 0;
+  }
+
+  .cs-personas__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top:5rem;
+  }
+
+  .cs-persona-card {
+    border-radius: 1.5rem;
+    padding: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+box-shadow: 4px 0 24px 0 rgba(0, 0, 0, 0.12) inset;
+  }
+  .cs-card-inner{
+    border-radius: 1.5rem;
+background: rgba(255, 255, 255, 0.10);
+box-shadow: inset 0 4px 16px #0000000f;
+border: 1px solid #fff;
+padding:2rem;
+  }
+
+  .cs-persona-card--pink {
+    background: linear-gradient(63deg, #FFF2E6 32.63%, #F4CEC9 135.06%);
+  }
+
+  .cs-persona-card--green {
+    
+background: linear-gradient(348deg, #1D976C -51.12%, #93F9B9 92.63%);
+
+  }
+  .cs-persona-card .cs-persona__header{
+margin-bottom:1.25rem;
+  }
+
+  .cs-persona-card--gray {    
+background: linear-gradient(349deg, #8E9EAB -127.21%, #EEF2F3 122%);
+  }
+
+  .cs-persona__header {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: start;
+    gap: 2rem;
+    display: grid;
+  }
+
+  .cs-persona__photo {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    object-fit: cover;
+  }
+
+  .cs-persona__name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0D1525;
+    line-height: 1.2;
+  }
+
+  .cs-persona__demographics {
+    margin-top: .375rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #1B2B3F;
+  }
+
+  
+
+  .cs-persona__divider {
+    height: 0.0625rem;
+    background: rgba(0, 0, 0, 0.12);
+    margin: 0;
+  }
+
+  .cs-persona-card--green .cs-persona__divider {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .cs-persona__section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+   color: #1B2B3F;
+    margin-bottom: 0.3rem;
+  }
+
+  .cs-card-bottom .cs-persona__section-title{
+   font-size:.875rem;
+   color: #1B2B3F;
+  }
+  .cs-card-bottom .cs-persona__section-body{
+   margin-bottom:1.25rem;
+  }
+  .cs-card-bottom >div:last-child .cs-persona__section-body{
+    margin-bottom:0px;
+  }
+  .cs-card-bottom{
+    border-radius: 1.5rem;
+box-shadow: inset 0 4px 16px #0000000f;
+padding:2rem;
+margin: -2rem;
+width:calc(100% + 4rem);
+margin-top:2rem;
+border-top:1px solid #fff;
+border-top-right-radius: 0px;
+  }
+
+  .cs-persona__section-body {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.65;
+  }
+
+  
+
+  /* ────────────────────────────────────────────── */
+  /* CONCEPT SKETCHES                              */
+  /* ────────────────────────────────────────────── */
+
+  .cs-sketches {
+    background-color: #ffffff;
+    padding: 5rem 10%;
+  }
+
+  .cs-sketches__theme {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 2.5rem;
+    margin-top: 0.25rem;
+  }
+
+  .cs-concept-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .cs-concept-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+
+  .cs-concept-box {
+    background-color: #F5F5F5;
+    border-radius: 1rem;
+    padding: 1.25rem;
+  }
+
+  .cs-concept-box__title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 0.375rem;
+  }
+
+  .cs-concept-box__meta {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .cs-concept-box__meta strong {
+    font-weight: 700;
+  }
+
+  .cs-concept-img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .cs-concept-img-tile {
+    background-color: #ffffff;
+    border-radius: 0.625rem;
+    aspect-ratio: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Other Concept Drafts */
+
+  .cs-other-drafts {
+    background-color: #ffffff;
+    padding: 0 10% 5rem;
+  }
+
+  .cs-other-drafts__heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 1.5rem;
+  }
+
+  .cs-draft-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.75rem;
+  }
+
+  .cs-draft-tile {
+    background-color: #F5F5F5;
+    border-radius: 0.75rem;
+    aspect-ratio: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* BRAND IDEATION VARIANTS                       */
+  /* ────────────────────────────────────────────── */
+
+  .cs-variants {
+    background-color: #FEF5F0;
+    padding: 3rem 3%;
+  }
+
+  .cs-variants__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .cs-variant-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cs-variant-card__header {
+    padding: 1.25rem 1.25rem 0.75rem;
+  }
+
+  .cs-variant-card__label {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: #C1440F;
+    margin-bottom: 0.2rem;
+  }
+
+  .cs-variant-card__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0D1525;
+  }
+
+  .cs-variant-card__main {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .cs-variant-card__sub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem 1.25rem;
+  }
+
+  .cs-variant-card__sub-tile {
+    background-color: #F0F0F0;
+    border-radius: 0.625rem;
+    aspect-ratio: 1;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* WE HAVE A WINNER                              */
+  /* ────────────────────────────────────────────── */
+
+  .cs-winner {
+    background-color: #ffffff;
+    padding: 6rem 10% 5rem;
+    text-align: center;
+  }
+
+  .cs-winner__heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 1rem;
+  }
+
+  .cs-winner__quote {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 1.7;
+    max-width: 44rem;
+    margin: 0 auto 3rem;
+  }
+
+  .cs-winner__image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/7;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  /* Logo construction (inside winner section) */
+
+  .cs-logo-construction {
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    border: 0.0625rem solid #EBEBEB;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .cs-construction__label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0D1525;
+  }
+
+  .cs-construction__sublabel {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 1.75rem;
+  }
+
+  .cs-construction__diagram {
+    background-color: #F8F8F8;
+    border-radius: 0.75rem;
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 85%;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* COLOUR PALETTE EXPLORATION                    */
+  /* ────────────────────────────────────────────── */
+
+  .cs-palettes {
+    background-color: #ffffff;
+    padding: 6rem 10% 3rem;
+    text-align: center;
+  }
+
+  .cs-palettes__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 0.75rem;
+  }
+
+  .cs-palettes__subtext {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 3.5rem;
+  }
+
+  .cs-palettes__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .cs-palette-card {
+    border: 0.0625rem solid #E0E0E0;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .cs-palette-card__header {
+    padding: 1.125rem 1.25rem;
+    border-bottom: 0.0625rem solid #E8E8E8;
+  }
+
+  .cs-palette-card__name {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: #0D1525;
+  }
+
+  .cs-palette-card__attrs {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #888888;
+    margin-top: 0.25rem;
+  }
+
+  .cs-palette-card__swatches {
+    padding: 1rem 1.25rem;
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    row-gap: 0.75rem;
+    column-gap: 0.875rem;
+    align-items: center;
+    border-bottom: 0.0625rem solid #E8E8E8;
+  }
+
+  .cs-swatch-circle {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.08);
+  }
+
+  .cs-swatch-label {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #666666;
+  }
+
+  .cs-palette-card__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 3.5rem;
+  }
+
+  .cs-palette-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* REJECTED PALETTE                              */
+  /* ────────────────────────────────────────────── */
+
+  .cs-rejected {
+    background-color: #ffffff;
+    padding: 0 10% 5rem;
+  }
+
+  .cs-rejected__heading {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 1.5rem;
+  }
+
+  .cs-rejected__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.625rem;
+  }
+
+  .cs-rejected__item {
+    background-color: #F5F5F5;
+    border-radius: 0.5rem;
+    aspect-ratio: 2.5 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: #999999;
+    letter-spacing: 0.05rem;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* FINAL LOGO                                    */
+  /* ────────────────────────────────────────────── */
+
+  .cs-final-logo {
+    background-color: #F2F2F2;
+    padding: 5rem 10%;
+  }
+
+  .cs-final-logo__heading {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 1.75rem;
+  }
+
+  .cs-final-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1.25rem;
+    align-items: start;
+  }
+
+  .cs-final-tile {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    border: 0.25rem solid #ffffff;
+    box-shadow: inset 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  }
+
+  .cs-final-tile--span2 {
+    grid-column: span 2;
+  }
+
+  .cs-final-tile--tall {
+    grid-row: span 2;
+  }
+
+  .cs-final-tile__img {
+    object-fit: cover;
+  }
+
+  .cs-final-tile__img--contain {
+    object-fit: contain;
+    padding: 1.25rem;
+    background-color: #ffffff;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* BRAND GUIDE PREVIEW                           */
+  /* ────────────────────────────────────────────── */
+
+  .cs-brand-guide {
+    background-color: #ffffff;
+    padding: 5rem 10%;
+  }
+
+  .cs-brand-guide__heading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0D1525;
+    margin-bottom: 0.75rem;
+  }
+
+  .cs-brand-guide__body {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #444444;
+    line-height: 1.75;
+    max-width: 64rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .cs-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .cs-guide-slide {
+    border-radius: 1rem;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    position: relative;
+    background-color: #F2F2F2;
+    border: 0.0625rem solid #E0E0E0;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* WALLET DESIGN                                 */
+  /* ────────────────────────────────────────────── */
+
+  .cs-wallet {
+    background-color: #0D1525;
+    padding: 5rem 10%;
+  }
+
+  .cs-wallet__heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 3rem;
+  }
+
+  .cs-wallet__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .cs-wallet__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .cs-wallet__sketch {
+    background-color: #F5EDD8;
+    border-radius: 1rem;
+    aspect-ratio: 4/3;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* RESPONSIVE — all new case study sections      */
+  /* ────────────────────────────────────────────── */
+
+  @media (max-width: 1024px) {
+    .cs-research {
+      grid-template-columns: 1fr;
+    }
+
+    .cs-research__left,
+    .cs-research__right {
+      padding: 4rem 8%;
+    }
+
+    .cs-personas__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cs-concept-row-3 {
+      grid-template-columns: 1fr;
+    }
+
+    .cs-concept-row-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .cs-draft-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cs-variants__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cs-logo-construction {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+    }
+
+    .cs-palettes__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cs-rejected__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cs-final-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cs-final-tile--span2 {
+      grid-column: span 2;
+    }
+
+    .cs-guide-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cs-wallet__layout {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .cs-scope {
+      padding: 4rem 6%;
+    }
+
+    .cs-sketches,
+    .cs-other-drafts,
+    .cs-palettes,
+    .cs-rejected,
+    .cs-final-logo,
+    .cs-brand-guide,
+    .cs-wallet {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+
+    .cs-draft-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+    }
+
+    .cs-rejected__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cs-final-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cs-final-tile--span2 {
+      grid-column: span 2;
+    }
+
+    .cs-guide-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cs-winner__heading {
+      font-size: 1.75rem;
+    }
+
+    .cs-winner {
+      padding: 4rem 6%;
+    }
+
+    .cs-axis {
+      grid-template-columns: 5rem 1fr 5rem;
+    }
+
+    .cs-axis__label-left,
+    .cs-axis__label-right {
+      font-size: 0.75rem;
+    }
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* STARKRAFTZ — RDNA ILLUSTRATION SERIES         */
+  /* ────────────────────────────────────────────── */
+
+  .cs-rdna {
+    padding: 5rem 10%;
+    background-color: #ffffff;
+    padding-bottom:0px;
+  }
+
+  .cs-rdna__inner {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  .cs-rdna__left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cs-rdna__heading {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #0D1525;
+    line-height: 1.3;
+  }
+
+  .cs-rdna__desc {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    color: #0D1525;
+    line-height: 1.65;
+  }
+
+  .cs-rdna__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    padding-left: 1.25rem;
+  }
+
+  .cs-rdna__list-item {
+    font-size: 0.9375rem;
+    color: #0D1525;
+    list-style-type: disc;
+  }
+
+  .cs-rdna__right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .cs-rdna__grid-top {
+    display: grid;
+    grid-template-columns: 40% 58.5%;
+    gap: 0.875rem;
+  }
+
+  .cs-rdna__tile {
+    border-radius: 1rem;    
+    overflow: hidden;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cs-rdna__tile--blue  { background-color: #E8F4F8; }
+  .cs-rdna__tile--pink  { background-color: #FAE8E5; }
+  .cs-rdna__tile--white { background-color: #F5F5F0; }
+  .cs-rdna__tile--rose  { background-color: #F5DDE4; }
+  .cs-rdna__tile--green { background-color: #EDF5EE; }
+
+  /* hero-card logo placeholder sizing */
+  .cs-starkraftz__hero-logo {
+    width: 60%;
+    aspect-ratio: 3 / 1;
+    border-radius: 0.5rem;
+    background-color: #E8E8E8;
+  }
+
+  /* ────────────────────────────────────────────── */
+  /* STARKRAFTZ — MASONRY ILLUSTRATION GALLERY     */
+  /* ────────────────────────────────────────────── */
+
+  .cs-masonry-gallery {
+    padding: 0.5rem 0 0;
+  }
+.cs-masonry-gallery img{object-fit:cover;min-height:0px;max-height:34vw;transition:.2s;}
+  .cs-masonry-gallery__grid {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .cs-masonry-gallery__col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .cs-masonry-gallery__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+  }
+
+  .cs-masonry-gallery__col:nth-child(2) .cs-masonry-gallery__img:last-child {
+    min-height:34.75vw;
+  }
+  .cs-masonry-gallery__col:last-child .cs-masonry-gallery__img:nth-child(2) {
+    border: 1px solid rgba(88, 66, 120, 0.16);    
+  }
+
+  @media only screen and (max-width: 767px) {
+.cs-masonry-gallery img{
+  max-height:100%;
+}
+  }
+
+}
 @layer utilities {
   .tracking-brand {
     letter-spacing: 0.15rem;
