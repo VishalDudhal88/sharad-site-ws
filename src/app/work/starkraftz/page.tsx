@@ -20,7 +20,7 @@ export default function StarkraftzCaseStudy() {
         <section className="case-study__hero">
           <div className="case-study__hero-inner">
             <div className="case-study__hero-left">
-              <h1 className="case-study__hero-title">Starkraftz</h1>
+              <h1 className="case-study__hero-title text-black">Starkraftz</h1>
               <div className="case-study__hero-meta">
                 <p className="case-study__hero-desc">
                   Starkraftz is a digital-first brand that deconstructs the
